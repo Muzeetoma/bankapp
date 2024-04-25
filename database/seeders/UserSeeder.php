@@ -31,7 +31,7 @@ class UserSeeder extends Seeder
             'state' => 'West Virginia',
             'postalCode' => '26827891',
             'dob' => '12/23/1892',
-            'country' => '',
+            'country' => 'USA',
             'userId'=> $user_id,
         ]);
     }
