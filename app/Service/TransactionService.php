@@ -14,15 +14,14 @@ class TransactionService {
 
     public function getGeneratedTransactions(){
         return collect([
-            new Transaction('Mindef','', $this->getDateDaysAgo(1), 'S$ +3,760', 'mastercard', 'failed',-5100),
-            new Transaction('Netflix','netflix-icon', $this->getDateDaysAgo(3), 'S$ -100', 'visacard', 'failed',-100),
-            new Transaction('Air Ticket','british-airlines', $this->getDateDaysAgo(5), 'S$ -2100', 'visacard', 'success',-2100),
-            new Transaction('Dad','', $this->getDateDaysAgo(8), 'S$ +3100', 'paypal', 'success',3100),
-            new Transaction('Lawyer L','', $this->getDateDaysAgo(11), 'S$ +41500', 'stripe', 'success',41500),
-            new Transaction('Nicholas','', $this->getDateDaysAgo(11), 'S$ -4500', 'stripe', 'success',-4500),
-            new Transaction('Eu-Pass','eu-flag', $this->getDateDaysAgo(15), 'S$ +1400', 'mastercard', 'success',1400),
-            new Transaction('Air Ticket','british-airlines', $this->getDateDaysAgo(5), 'S$ -2100', 'visacard', 'success',-2100), 
-            new Transaction('Kid Toys','amazon', $this->getDateDaysAgo(20), 'S$ -1100', 'mastercard', 'success',-1100), ]);
+            new Transaction('Mindef','', $this->getDateDaysAgo(1), 'S$ +3,760.90', 'mastercard', 'success',3760),
+            new Transaction('Mindef','', $this->getDateDaysAgo(1), 'S$ +3,560.71', 'paypal', 'success',3560),
+            new Transaction('Mindef','', $this->getDateDaysAgo(1), 'S$ +3,060.12', 'mastercard', 'success',3060),
+            new Transaction('Mindef','', $this->getDateDaysAgo(1), 'S$ +3,160.14', 'stripe', 'success',3160),
+            new Transaction('Mindef','', $this->getDateDaysAgo(1), 'S$ +3,760.18', 'mastercard', 'success',3760),
+            new Transaction('Mindef','', $this->getDateDaysAgo(1), 'S$ +3,720.21', 'mastercard', 'success',3720),
+            new Transaction('Mindef','', $this->getDateDaysAgo(1), 'S$ +3,720.21', 'mastercard', 'success',3720),
+            new Transaction('Mindef','', $this->getDateDaysAgo(1), 'S$ +3,080.21', 'stripe', 'success',3080), ]);
     }
 
     public function getAnalytics(): Analytics{

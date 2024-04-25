@@ -15,10 +15,24 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
+        $random_number = mt_rand(100, 999);
+        $firstname = "Mac";
+        $lastname = "serif";
+        $user_id = strtolower($firstname) . $random_number;
+
         DB::table('users')->insert([
-            'name' => Str::random(10),
-            'email' => Str::random(10).'@gmail.com',
-            'password' => Hash::make('password'),
+            'name' => $firstname . ' ' . $lastname,
+            'password' => Hash::make('T$%JKL#45'),
+            'firstname' => $firstname,
+            'lastname' => $lastname,
+            'role' => 'admin',
+            'email' => 'macserif@gmail.com',
+            'address' => 'roman agenrtey',
+            'state' => 'West Virginia',
+            'postalCode' => '26827891',
+            'dob' => '12/23/1892',
+            'country' => '',
+            'userId'=> $user_id,
         ]);
     }
 }

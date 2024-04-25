@@ -66,6 +66,8 @@ class AdminController extends Controller
             return back()->with('error', 'The passwords don\'t match!'); 
         }
 
+        $random_number = mt_rand(100, 999);
+
         $user = new User;
         $user->firstname = $firstName;
         $user->lastname = $lastName;
@@ -78,7 +80,7 @@ class AdminController extends Controller
         $user->country = $country;
         $user->name = $name;
         $user->password = Hash::make($password);
-        $user->userId = strtolower($firstName).Str::random(3);
+        $user->userId = strtolower($firstName).$random_number;
          
         if($user->save()){
             $this->createUserDetail($email);

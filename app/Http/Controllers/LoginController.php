@@ -19,11 +19,11 @@ class LoginController extends Controller
     public function login(Request $request)
     {
 
-        $email = $request->input('email');
+        $userId = $request->input('userId');
         $userAgent = $request->header('User-Agent');
         try {
             $credentials = $request->validate([
-                'email' => ['required', 'email'],
+                'userId' => ['required'],
                 'password' => ['required'],
             ]);
         } catch (ValidationException $e) {
@@ -35,7 +35,7 @@ class LoginController extends Controller
 
             Auth::logout();
 
-            $user = $this->generateOtp($email,$userAgent);
+            $user = $this->generateOtp($userId, $userAgent);
 
             try{
                 Mail::to($user)->send(new OtpMail($user));
@@ -49,16 +49,16 @@ class LoginController extends Controller
         return back()->with('error', 'The provided credentials do not match our records.');
     }
 
-    private function generateOtp($email,$useragent){
-        $user = User::where('email', $email)->first();
+    private function generateOtp($userId,$useragent){
+        $user = User::where('userId', $userId)->first();
 
-        $token = Str::random(6);
+        $token = mt_rand(100000, 999999);
 
         $user->remember_token = $token;
         $user->useragent = $useragent;
         $user->save();
 
-        session(['email_to_verify' => $email]);
+        session(['userId_to_verify' => $userId]);
 
         return $user;
     }

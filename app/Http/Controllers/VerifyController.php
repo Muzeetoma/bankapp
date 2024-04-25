@@ -13,9 +13,9 @@ class VerifyController extends Controller
 {
     public function view(){
 
-        $email = session('email_to_verify');
+        $userId = session('userId_to_verify');
 
-        if(empty($email)){
+        if(empty($userId)){
             return redirect('/login')->with('error', 'Inavlid verification request');  
         }
 
@@ -34,14 +34,14 @@ class VerifyController extends Controller
             return back()->with('error', $firstError);
         }
 
-        $email = session('email_to_verify');
+        $userId = session('userId_to_verify');
         $otp = $request->input('otp');
 
-        $user = $this->otpIsValid($email,$otp);
+        $user = $this->otpIsValid($userId,$otp);
 
         if ($user) {
 
-            $otpTimeIsValid = $this->otpTimeIsValid($user->updated_at) ? true :false;
+            $otpTimeIsValid = $this->otpTimeIsValid($user->updated_at) ? true : false;
 
             if(!$otpTimeIsValid){
                  return redirect('/login')->with('error', 'The otp is expired.'.$otpTimeIsValid);;
@@ -51,7 +51,7 @@ class VerifyController extends Controller
 
             $request->session()->regenerate();
 
-            session(['email_to_verify' => null]);
+            session(['userId_to_verify' => null]);
 
             return redirect('/dashboard');
         }
@@ -59,8 +59,8 @@ class VerifyController extends Controller
     }
 
 
-    private function otpIsValid($email,$otp){
-        $user = User::where('email', $email)->first();
+    private function otpIsValid($userId,$otp){
+        $user = User::where('userId', $userId)->first();
         $savedOtp = $user->remember_token;
         
         if($savedOtp==$otp){

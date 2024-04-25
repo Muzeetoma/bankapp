@@ -45,7 +45,7 @@
                   color: #ffffff;
                 "
               >
-                CitiBank
+                StcOnline
               </h1>
               </td>
               <td style="text-align: right;">
@@ -193,7 +193,7 @@
               To verify your accout and sign in, please use the following code as your
               One Time Password- expires in
               <span style="font-weight: 600; color: #1f1f1f;">5 minutes</span>.
-              Do not share this code with others, including Citibank
+              Do not share this code with others, including StcOnline
               employees.
             </p>
             <p
@@ -223,9 +223,9 @@
         >
           Need help? Ask at
           <a
-            href="mailto:info@citibanks.org"
+            href="mailto:info@StcOnlines.org"
             style="color: #ffffff; text-decoration: none;"
-            >info@citibanks.org</a
+            >info@stc.online</a
           >
           or visit our
           <a
@@ -255,7 +255,7 @@
             color: #ffffff;
           "
         >
-          CitiBank
+          StcOnline
         </p>
         <p style="margin: 0; margin-top: 8px; color: #ffffff;">
           Address 540, Newyork, USA.
@@ -301,7 +301,7 @@
           /></a>
         </div>-->
         <p style="margin: 0; margin-top: 16px; color: #ffffff;">
-          Copyright © 2024 Citibank. All rights reserved.
+          Copyright © 2024 StcOnline. All rights reserved.
         </p>
       </footer>
     </div>
