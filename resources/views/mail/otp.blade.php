@@ -45,7 +45,7 @@
                   color: #ffffff;
                 "
               >
-                StcOnline
+                ScotMatt
               </h1>
               </td>
               <td style="text-align: right;">
@@ -193,7 +193,7 @@
               To verify your accout and sign in, please use the following code as your
               One Time Password- expires in
               <span style="font-weight: 600; color: #1f1f1f;">5 minutes</span>.
-              Do not share this code with others, including StcOnline
+              Do not share this code with others, including ScotMatt
               employees.
             </p>
             <p
@@ -223,7 +223,7 @@
         >
           Need help? Ask at
           <a
-            href="mailto:info@StcOnlines.org"
+            href="mailto:info@ScotMatts.org"
             style="color: #ffffff; text-decoration: none;"
             >info@stc.online</a
           >
@@ -255,53 +255,14 @@
             color: #ffffff;
           "
         >
-          StcOnline
+          ScotMatt
         </p>
         <p style="margin: 0; margin-top: 8px; color: #ffffff;">
           Address 540, Newyork, USA.
         </p>
-        <!--<div style="margin: 0; margin-top: 16px;">
-          <a href="" target="_blank" style="display: inline-block;">
-            <img
-              width="36px"
-              alt="Facebook"
-              src="https://archisketch-resources.s3.ap-northeast-2.amazonaws.com/vrstyler/1661502815169_682499/email-template-icon-facebook"
-            />
-          </a>
-          <a
-            href=""
-            target="_blank"
-            style="display: inline-block; margin-left: 8px;"
-          >
-            <img
-              width="36px"
-              alt="Instagram"
-              src="https://archisketch-resources.s3.ap-northeast-2.amazonaws.com/vrstyler/1661504218208_684135/email-template-icon-instagram"
-          /></a>
-          <a
-            href=""
-            target="_blank"
-            style="display: inline-block; margin-left: 8px;"
-          >
-            <img
-              width="36px"
-              alt="Twitter"
-              src="https://archisketch-resources.s3.ap-northeast-2.amazonaws.com/vrstyler/1661503043040_372004/email-template-icon-twitter"
-            />
-          </a>
-          <a
-            href=""
-            target="_blank"
-            style="display: inline-block; margin-left: 8px;"
-          >
-            <img
-              width="36px"
-              alt="Youtube"
-              src="https://archisketch-resources.s3.ap-northeast-2.amazonaws.com/vrstyler/1661503195931_210869/email-template-icon-youtube"
-          /></a>
-        </div>-->
+        
         <p style="margin: 0; margin-top: 16px; color: #ffffff;">
-          Copyright © 2024 StcOnline. All rights reserved.
+          Copyright © 2024 ScotMatt. All rights reserved.
         </p>
       </footer>
     </div>

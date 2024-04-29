@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>StcOnline</title>
+        <title>ScotMatt</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -138,7 +138,7 @@
                         <li class="nav-item border-bottom py-2 mb-2">
                           <a class="nav-link active" aria-current="page" href="#">
                           <center><img src="{{ asset('images/logo.png') }}" height="48px" width="48px"/>
-                    <h6 class="text-center fsm-7"><span class="text-primary fw-bold">STC</span><span class="text-dark fw-bold">Online</span></h6>
+                    <h6 class="text-center fsm-7"><span class="text-primary fw-bold">Scot</span><span class="text-dark fw-bold">Matt</span></h6>
                     </center>
                           </a>
                         </li>
@@ -194,7 +194,7 @@
                         <li class="nav-item border-bottom py-1 mb-1">
                           <a class="nav-link ms-2" aria-current="page" href="#">
                          <img src="{{ asset('images/logo.png') }}" height="48px" width="48px"/>
-                         <h6 class="fsm-7"><span class="text-primary fw-bold">STC</span><span class="text-dark fw-bold">Online</span></h6>
+                         <h6 class="fsm-7"><span class="text-primary fw-bold">Scot</span><span class="text-dark fw-bold">Matt</span></h6>
                      
                           </a>
                         </li>
